@@ -61,4 +61,17 @@ html {
     opacity: 1;
   }
 
- 
+  .c-loader {
+    animation: is-rotating 3s infinite;
+    border: 100px solid #e5e5e5;
+    border-radius: 5000%;
+    border-top-color: #00c3ff;
+    height: 10px;
+    width: 10px;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
