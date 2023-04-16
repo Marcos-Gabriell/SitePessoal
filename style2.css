@@ -41,7 +41,7 @@ html {
     margin: 20px auto;
   }
 
-  button  {
+button {
     border: none;
     width: 150px;
     padding: 10px;
@@ -53,11 +53,11 @@ html {
     border-radius: 5px;
   }
   
-  .home-info button a{
+button a{
     color: white;
   }
   
-  .home-info button:hover{
+button:hover{
     opacity: 1;
   }
 
