@@ -43,7 +43,14 @@ ul li {
   margin-bottom: 10px;
 }
 
-button {
+ul li a {
+  color: #7700ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#voltar-link {
+  display: inline-block;
   padding: 10px 20px;
   background-color: #7700ff;
   color: #fff;
@@ -51,11 +58,15 @@ button {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-button a {
-  color: #fff;
-  text-decoration: none;
+#voltar-link:hover {
+  background-color: #6600cc;
+}
+
+#voltar-link:active {
+  background-color: #550099;
 }
 
 footer {
