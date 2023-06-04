@@ -29,7 +29,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  width: 1120px;
+  max-width: 1120px;
+  width: 100%;
+  padding: 0 20px; /* Adicione um espaçamento para evitar que o conteúdo fique colado nas bordas */
 }
 
 /* HEADER */
@@ -63,16 +65,16 @@ a {
 /* HOME */
 
 section#home {
-  height: calc(100vh + 80px);
+  min-height: calc(100vh - 80px); /* Reduza a altura do section para compensar a altura do header fixo */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 50px;
-  width: 75%;
+  padding: 20px;
 }
 
 .home-info {
-  width: 50%;
+  width: 100%;
+  max-width: 600px; /* Defina uma largura máxima para evitar que o texto fique muito esticado em telas grandes */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -80,9 +82,9 @@ section#home {
 }
 
 .home-resume {
-  height: 400px; /* Ajuste a altura conforme necessário */
-  overflow-y: auto; /* Adiciona uma barra de rolagem caso o conteúdo seja maior que a altura definida */
-  font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+  height: 400px;
+  overflow-y: auto;
+  font-size: 16px;
 }
 
 .home-info button {
@@ -106,15 +108,17 @@ section#home {
 }
 
 .home-img {
-  width: 30%;
+  width: 100%;
+  max-width: 400px; /* Defina uma largura máxima para a imagem */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .home-img img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  max-width: 200px; /* Defina um tamanho máximo para a imagem */
+  height: auto;
   animation: float 5s ease-in-out infinite;
   box-shadow: 0 10px 10px;
   border-radius: 50%;
@@ -129,9 +133,6 @@ section#home {
   }
 }
 
-
-
-
 /* FOOTER */
 
 footer {
@@ -142,7 +143,7 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   header {
     justify-content: center;
   }
@@ -160,18 +161,4 @@ footer {
     width: 100%;
     padding: 30px;
   }
-
-  .swiper-slide {
-    flex-direction: column-reverse;
-    gap: 100px;
-  }
-
-  .project-img {
-    width: 85%;
-  }
- 
-  .project-info {
-    width: 50%;
-  }
 }
-
