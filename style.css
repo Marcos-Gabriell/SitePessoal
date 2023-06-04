@@ -67,8 +67,8 @@ section#home {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 5px 20px;
-  width: 100%;
+  padding: 20px 50px;
+  width: 75%;
 }
 
 .home-info {
@@ -77,6 +77,12 @@ section#home {
   flex-direction: column;
   gap: 15px;
   text-align: justify;
+}
+
+.home-resume {
+  height: 400px; /* Ajuste a altura conforme necessário */
+  overflow-y: auto; /* Adiciona uma barra de rolagem caso o conteúdo seja maior que a altura definida */
+  font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 .home-info button {
