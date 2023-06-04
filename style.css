@@ -2,6 +2,7 @@
 
 /* INITIALS */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +107,17 @@ section#home {
 .home-info button:hover{
   opacity: 1;
 }
+.home-position {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #7700ff;
+}
 
 .home-img {
   width: 100%;
@@ -159,6 +171,6 @@ footer {
 
   .home-info, .home-img {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
   }
 }
