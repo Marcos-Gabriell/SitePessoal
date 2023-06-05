@@ -17,10 +17,7 @@ function getApiGitHub() {
         repoLink.target = '_blank'; // Abre o link em uma nova aba
 
         let repoInfo = document.createElement('span');
-        repoInfo.innerHTML = `
-          URL: ${item.html_url}<br>
-          Data Criação: ${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}
-        `;
+        repoInfo.innerHTML = ` Data De Criação: ${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}`;
 
         li.appendChild(repoLink);
         li.appendChild(repoInfo);

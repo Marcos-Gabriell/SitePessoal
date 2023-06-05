@@ -1,23 +1,19 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-}
-
 .slider {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave para a mudança de slides */
 }
 
 .slide {
   display: none;
   text-align: center;
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave para a exibição do slide */
+}
+
+.slide.active {
+  display: block;
 }
 
 .slide img {
@@ -46,7 +42,9 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
-
+h1 {
+  text-align: center;
+}
 .home-button {
   padding: 10px 20px;
   background-color: #7700ff;
@@ -57,8 +55,8 @@ h1 {
   cursor: pointer;
 }
 
-footer {
+.footer {
   box-shadow: 0px -1px 0px 0px #ececec;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
