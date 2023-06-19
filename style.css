@@ -175,3 +175,55 @@ footer {
     padding: 20px;
   }
 }
+
+
+
+
+
+
+  /* Estilos CSS para a seção */
+  .my-section {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  /* Estilos CSS para o conteúdo da seção */
+  .my-section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my-section-content h2 {
+    width: 100%;
+  }
+
+  .image-container {
+    position: relative;
+    margin: 10px;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px; /* Adicione esta linha para deixar as bordas arredondadas */
+  }
+
+  .image-container:hover {
+    transform: scale(1.1);
+  }
+
+  .image-container h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+  }
