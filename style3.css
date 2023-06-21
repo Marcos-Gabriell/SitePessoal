@@ -5,7 +5,12 @@
     align-items: center;
     height: 100vh;
   }
-  
+  h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #7700ff;
+  }
   .social-buttons {
     display: flex;
     flex-direction: column;
